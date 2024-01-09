@@ -14,7 +14,7 @@ ngOnInit(): void {
 }
 main(){
 this.typed = new Typed('#element', {
-    strings: ['Python Developer', 'Web Developer', 'Wev Designer'],
+    strings: ['React','NodeJS','MERN Stack Developer','MEAN Stack Developer','Full Stack Developer','Python Developer', 'Web Developer','JavaScript Developer','SoftWare Developer'],
     typeSpeed: 50,
 
     loop:true
