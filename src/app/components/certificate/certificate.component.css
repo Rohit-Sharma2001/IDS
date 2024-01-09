@@ -1,0 +1,71 @@
+.mainCertificateDiv{
+    background-color: black;
+    color: rgb(224 158 9);
+    display: flex;
+    position: relative;
+    width: 98%;
+    height: 41rem;
+    margin: 15px 15px 10px;
+}
+
+.logoImage{
+    position: absolute;
+    left: 90px;
+    top: 15px;
+}
+
+
+.certificateOfCompletion{
+    position: absolute;
+    top: 6rem;
+    left: 30rem;
+    font-size: 45px;
+    font-style: italic;
+    font-family: monospace;
+    font-family: fangsong;
+    font-variant-caps: revert-layer;
+}
+
+
+.Para{
+    position: absolute;
+    top: 11rem;
+    left: 10rem;
+    right: 2rem;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.Para2{
+    position: absolute;
+    top: 16rem;
+    font-style: italic;
+    font-family: cursive;
+    left: 10rem;
+}
+
+.WeWishHimAllTheBestForHisUpcomingCareer{
+    position: absolute;
+    top: 23rem;
+    font-family: cursive;
+    left: 15rem;
+}
+
+
+.footerTitle{
+    position: absolute;
+    top: 34rem;
+    left: 10rem;
+}
+
+.Address{
+    position: absolute;
+    top: 37rem;
+    left: 10rem;
+}
+
+.Gmail{
+    position: absolute;
+    top: 39rem;
+    left: 10rem;
+} 
