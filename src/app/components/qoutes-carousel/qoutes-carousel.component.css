@@ -1,5 +1,28 @@
 .mainDiv{
-    width: 30rem;
-    margin-left: 25rem;
-    padding: 1rem;
+    height: 33rem;
+    width: 65rem;
+    border-radius: 35px;
+    margin-left: 15%;
+    border: 3px dashed rgb(231, 96, 6);
+    
 }
+.div1{
+    height: 23rem;
+    width: 50rem;
+    background-color: black;
+    color: goldenrod;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px solid goldenrod;
+    border-radius: 25px;
+}
+.inputBox{
+    width: 30rem;
+    margin-left: 13rem;
+}
+
+.labels{
+    font-size: 20px;
+}
+

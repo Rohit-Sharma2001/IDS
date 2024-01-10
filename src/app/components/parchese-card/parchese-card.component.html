@@ -24,11 +24,11 @@
 </div>
           <!-- ------------------cards start--------------------------- -->
 
-         <div class="d-flex justify-content-evenly" >
+        <div class="d-flex justify-content-evenly main" >
             <div class="row width" *ngFor="let data of parchesCardData">
                 <div class=" col">
-                   <div class="card shadow text-center">
-                      <div class="card-header bg-white p-3">
+                    <div class="card shadow text-center">
+                        <div class="card-header bg-white p-3">
                           <h4 class="text-primary mb-4">{{data.PriceText}}</h4>
                           <span class="d-block">
                               <span class="display-6 text-dark fw-bold">
@@ -36,10 +36,10 @@
                           </span>
                           <span class="d-block text-gray font-small">{{data.months}}</span>
                           </span>
-                      </div>
-                      <div class="card-body">
-                          <h4 class=" pb-3"><strong>{{data.courseName}}</strong> </h4>
-                          <ul class="list-unstyled mb-4" >
+                        </div>
+                        <div class="card-body">
+                            <h4 class=" pb-3"><strong>{{data.courseName}}</strong> </h4>
+                            <ul class="list-unstyled mb-4" >
                               <li class="list-item fw-bold pb-3">Provide 100% Job Assistance</li>
                               <li class="list-item fw-bold pb-3">Provide Internship Letter</li>
                               <li class="list-item fw-bold pb-3">Provide Recording Videos</li>
@@ -50,12 +50,13 @@
                               <li class="list-item fw-bold pb-3">Gives Quetions on Prectice</li>
 
                               <li class="list-item fw-bold pb-3">Community support</li>
-                          </ul>
-                          <div class="d-grid button"><a href="#" class="btn btn-primary animate-up-1">Purchase now</a></div>
-                      </div>
-                  </div>
+                            </ul>
+                            <div class="d-grid button"><a href="#" class="btn btn-primary animate-up-1">Purchase now</a></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </div>
               <!-- <div class="row width">
                 <div class=" col">
                    <div class="card shadow text-center">
@@ -115,7 +116,7 @@
                 </div>
               </div> -->
               
-            </div>
+            
             <div class="d-flex justify-content-center">
             <button  routerLink="/courses-card" class="btn course-btn">All Courses <i class="bi bi-arrow-right"></i></button>
         </div>

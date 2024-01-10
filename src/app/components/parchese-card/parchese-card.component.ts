@@ -12,24 +12,24 @@ export class ParcheseCardComponent {
     {
     PriceText:"Price",
     Price:"15000/-",
-    months:"3-4/ months",
-    courseName:"MEAN Stack Developer",
+    months:"4 months",
+    courseName:"MEAN Stack ",
     courseList:["Provide 100% Job Assistance","Provide Internship Letter","Provide Recording Videos","Work On Live Project","Also Available Demo Class","Gives Quetions on Prectice","Community support"],
     btnText:"Purchase now"
 },
 {
   PriceText:"Price",
-  Price:"6500/-",
-  months:"2-3/ months",
-  courseName:"Python Developer",
+  Price:"15000/-",
+  months:"4 months",
+  courseName:"MERN Stack ",
   courseList:["Provide 100% Job Assistance","Provide Internship Letter","Provide Recording Videos","Work On Live Project","Also Available Demo Class","Gives Quetions on Prectice","Community support"],
   btnText:"Purchase now"
 },
 {
   PriceText:"Price",
-  Price:" 7000/-",
-  months:"2-3/ months",
-  courseName:"JavaScript Developer",
+  Price:" 6500/-",
+  months:"2 months",
+  courseName:"JavaScript ",
   courseList:["Provide 100% Job Assistance","Provide Internship Letter","Provide Recording Videos","Work On Live Project","Also Available Demo Class","Gives Quetions on Prectice","Community support"],
   btnText:"Purchase now"
 }
