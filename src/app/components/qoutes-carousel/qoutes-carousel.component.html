@@ -8,18 +8,18 @@
 
   <div class="div1 " >
     <label class="labels">Name </label>
-    <input class="form-control inputBox" placeholder="Enter Your Name" >
+    <input class="form-control inputBox" placeholder="Enter Your Name" [(ngModel)]="user.name" >
 
     <label class="labels">Email</label>
-    <input class="form-control inputBox" placeholder="Enter Your Email">
+    <input class="form-control inputBox" placeholder="Enter Your Email" [(ngModel)]="user.email">
 
     <label class="labels">Mobile Number</label>
-    <input class="form-control inputBox" type="number" placeholder="Enter Your Phone Number">
+    <input class="form-control inputBox" type="number" placeholder="Enter Your Phone Number" [(ngModel)]="user.mobile">
     
-    <label class="labels">Enquiry</label>
-    <input class="form-control inputBox" placeholder="Your Query">
+    <label class="labels">Query</label>
+    <input class="form-control inputBox" placeholder="Your Query" [(ngModel)]="user.query">
 
-    <button class="form-control bg-dark text-white" style="width: 10rem;  margin-left:33rem; margin-top:1rem; border: 1px solid goldenrod; border-radius: 25px"> Submit</button>
+    <button class="form-control bg-dark text-white" style="width: 10rem;  margin-left:33rem; margin-top:1rem; border: 1px solid goldenrod; border-radius: 25px" (click)="saveQuery()"> Submit</button>
   </div>
 
     

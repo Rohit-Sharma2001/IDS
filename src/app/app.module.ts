@@ -19,6 +19,9 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
 import { CoursesCardComponent } from './courses/courses-card/courses-card.component';
 import { UserProfilesComponent } from './users/user-profiles/user-profiles.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
+import { FormsModule } from '@angular/forms';
+import { ApiCallingService } from './Service/api-calling.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -46,11 +49,10 @@ import { CertificateComponent } from './components/certificate/certificate.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
-   
-
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ApiCallingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
