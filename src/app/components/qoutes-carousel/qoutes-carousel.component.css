@@ -1,4 +1,4 @@
-.mainDiv{
+/* .mainDiv{
     height: 33rem;
     width: 65rem;
     border-radius: 35px;
@@ -25,4 +25,41 @@
 .labels{
     font-size: 20px;
 }
+ */
 
+ .mainDiv {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div1 {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

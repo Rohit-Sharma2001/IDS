@@ -1,4 +1,4 @@
-<div class="bg-dark text-white mainDiv" >
+<!-- <div class="bg-dark text-white mainDiv" >
   <div  style="margin-left: 35%;">
     <h2>Enquiry Form</h2>
   </div>
@@ -23,4 +23,22 @@
   </div>
 
     
+</div> -->
+
+<div class="mainDiv">
+  <div class="div1" id="queryForm">
+      <label for="name" >Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter Your Name" [(ngModel)]="user.name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Provide Your Email" [(ngModel)]="user.email">
+
+      <label for="mobile">Mobile:</label>
+      <input type="number" id="mobile" name="mobile" required placeholder="Enter Your Mobile Number" [(ngModel)]="user.mobile">
+
+      <label for="query"></label>
+      <textarea id="message" name="message" rows="4" required placeholder="Write Your Query Here" [(ngModel)]="user.query"></textarea>
+
+      <button type="submit" (click)="saveQuery()">Submit</button>
+  </div>
 </div>
