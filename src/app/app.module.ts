@@ -9,7 +9,6 @@ import { CardsComponent } from './components/cards/cards.component';
 import { SlidbarComponent } from './components/slidbar/slidbar.component';
 import { ImageCardComponent } from './components/image-card/image-card.component';
 import { ParcheseCardComponent } from './components/parchese-card/parchese-card.component';
-import { BannerComponent } from './components/banner/banner.component';
 import { QoutesCarouselComponent } from './components/qoutes-carousel/qoutes-carousel.component';
 import { FooterComponent } from './comman/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
@@ -22,7 +21,6 @@ import { CertificateComponent } from './components/certificate/certificate.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ApiCallingService } from './Service/api-calling.service';
 import { HttpClientModule } from '@angular/common/http';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { AdminComponent } from './components/admin/admin.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy.component';
@@ -37,7 +35,7 @@ import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy
     SlidbarComponent,
     ImageCardComponent,
     ParcheseCardComponent,
-    BannerComponent,
+   
     QoutesCarouselComponent,
     FooterComponent,
     LoginComponent,
