@@ -1,5 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-@import "~bootstrap-icons/font/bootstrap-icons.css";
-body{
-background-color: #F2F7FD;
+*{
+    margin: 0;
+    padding: 0;
 }
+
+body{
+    min-height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+@media (max-width:400){
+    *{
+        width: 100%;
+    }
+}
+.text-golden{
+    color:#ffd700;
+}
+

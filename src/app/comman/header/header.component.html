@@ -1,43 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-white  " style=" background-color: rgb(18, 18, 62)">
-    <div >
-      <span><img src="../../../assets/All_imgaes/logo/logo_head-removebg-preview.png" height="50px" style="margin-left: 1rem;"></span>
-      <a class="navbar-brand ms-lg-5" style="position: absolute; left:2rem">Infinite Digital Solutions</a>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
-          </li>
-         
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Courses
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item "  routerLink="/courses-card">MERN Stack Developer</a></li>
-              <li><a class="dropdown-item" routerLink="/courses-card">MEAN Stack Developer</a></li>
-             
-              <li><a class="dropdown-item" routerLink="/courses-card">Python Developer</a></li>
-              <li><a class="dropdown-item" routerLink="/courses-card">JavaScript Developer</a></li>
-              <li><a class="dropdown-item" routerLink="/courses-card">More</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Videos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/about">About</a>
-          </li>
-
-          
-        </ul>
-        <form class="d-flex">
-           <a routerLink="/register"> <button class="btn btn-outline-warning me-lg-2" type="submit">Sign up</button></a>
-         
-          <a routerLink="/login"><button class="btn btn-outline-warning me-lg-5" type="submit">Login</button></a>
-        </form>
-      </div> -->
-    </div>
-  </nav>
+<nav>
+  <ul class="sidebar" [ngStyle]="{'display':sidebar?'flex':'none'}">
+  <li><a (click)="toggleSidebar(false)"><i class="fa-solid fa-xmark"></i></a></li>
+  <li><a>Courses</a></li>
+  <li><a>Accounts </a></li>
+  <li><a>SignUp/SignIn</a></li>
+  
+</ul>
+<ul>
+  <li class="logo-title"><a (click)="navigate('')"><i class="fa-solid fa-infinity logo"></i><span class="mx-2 title">IDS</span></a></li>
+  <li class="hideOnMobile"><a (click)="navigate('')">Home</a></li>
+  <li class="hideOnMobile"><a (click)="navigate('courses')">Courses</a></li>
+  <li *ngIf="userData?.role=='admin'" class="hideOnMobile"><a (click)="navigate('admin')">Admin</a></li>
+  <li class="hideOnMobile"><a (click)="navigate('login')">{{!userData?'SignUp/SignIn':'Logout'}}</a></li>
+  <li><a class="menu-button" (click)="toggleSidebar(true)"><i class="fa-solid fa-bars"></i></a></li>
+</ul>
+</nav>

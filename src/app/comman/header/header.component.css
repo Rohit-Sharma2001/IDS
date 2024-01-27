@@ -1,43 +1,87 @@
+nav{
+  background-color: rgb(18,18,62);
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  font-family: cursive;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Poppins:wght@400;600;700&family=Roboto+Mono:ital,wght@1,100&family=Rubik&display=swap');
+nav ul{
+  padding-left: 0px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
+}
+.logo-title{
+  padding-left: 0px !important;
+}
+nav li{
+  height: 70px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffd700;
+  font-size: large;
+  font-weight: 500;
+  cursor: pointer;
+}
 
-  .navbar-brand{
-    color: gold;
-    font-weight: 600;
-    font-size: 26px;
+nav a:hover{
+  /* font-size: larger; */
+  color: #fff;
+  text-decoration: underline;
+  
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+.sidebar{
+  position: fixed;
+  top:0;
+  right:0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255,255,255,0.2 );
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba( 0,0,0,0.1);
+  /* display: none !important; */
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+
+.sidebar li{ width: 100%;}
+.sidebar a{width:100%}
+.menu-button{
+  display: none !important;
+}
+
+@media (max-width:800px){
+  .hideOnMobile{
+    display: none;
   }
+  .menu-button{
+    display: block !important;
+  }
+}
+.logo{
+font-size: 60px;
+}
+.title{
+  font-size: 20px;
+}
 
-.nav-item a{
-    color: white;
-    font-size: 18px;
-   
+@media (max-width:400px){
+  .sidebar{
+    width:100%
+  }
 }
-.navbar-collapse{
-    margin-left: 200px;
-    font-family: 'Rubik', sans-serif;
-}
-.dropdown-menu{
-background-color: rgb(18, 18, 62);
-}
-.dropdown-menu a:hover
-{
-  color: goldenrod;
-background-color: black;
-}
-/* .nav-item a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.nav-item a:hover:after { 
-  width: 100%; 
-  left: 0; 
-} */
+

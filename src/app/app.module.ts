@@ -19,10 +19,13 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
 import { CoursesCardComponent } from './courses/courses-card/courses-card.component';
 import { UserProfilesComponent } from './users/user-profiles/user-profiles.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ApiCallingService } from './Service/api-calling.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { AdminComponent } from './components/admin/admin.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy.component';
 
 
 @NgModule({
@@ -43,7 +46,9 @@ import { HttpClientModule } from '@angular/common/http';
     AboutUsComponent,
     CoursesCardComponent,
     UserProfilesComponent,
-    CertificateComponent
+    CertificateComponent,
+    AdminComponent,
+    PrivacypolicyComponent
     
   ],
   imports: [
@@ -51,6 +56,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    NgMultiSelectDropDownModule.forRoot()
   ],
   providers: [ApiCallingService],
   bootstrap: [AppComponent]

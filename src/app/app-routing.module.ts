@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { CoursesCardComponent } from './courses/courses-card/courses-card.component';
 import { AboutUsComponent } from './about/about-us/about-us.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy.component';
 
 const routes: Routes = [
   {path:"" ,component:AppComponent},
@@ -21,9 +23,12 @@ const routes: Routes = [
     { path: "", component: HomeComponent },
     { path: "login", component:LoginComponent},
     { path: "register", component:RegisterComponent},
-    {path:"courses-card",component:CoursesCardComponent},
+    {path:"courses",component:CoursesCardComponent},
     {path:"about",component:AboutUsComponent},
-    {path:"certificate", component:CertificateComponent}
+    {path:"admin",component:AdminComponent},
+    {path:"certificate", component:CertificateComponent},
+    {path:"policy",component:PrivacypolicyComponent},
+
   ], { useHash: true })],
   exports: [RouterModule]
 })
