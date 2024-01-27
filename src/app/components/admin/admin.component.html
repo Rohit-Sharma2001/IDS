@@ -1,0 +1,71 @@
+<div class="container-fluid">
+    <div class="row bg-white">
+        <div class="col-md-2 col-sm-12">
+            <ul class="admin-menu">
+                <li>
+                    Accounts
+                </li>
+                <li>
+                    Users
+                </li>
+                <li>Queries
+
+                </li>
+                
+            </ul>
+        </div>
+        <div class="col-md-10 col-sm-12">
+<div class="container my-5">
+    <form class="w-50" [formGroup]="accountForm">
+        <div class="mb-3">
+          <label for="amount" class="form-label">Amount</label>
+          <input type="number" class="form-control" id="exampleInputEmail1" formControlName="amount" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Category</label><br>
+          <select class="form-control" formControlName="category">
+            <option value="cafe">Cafe</option>
+            <option value="coaching">Coaching</option>
+          </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Payment Mode</label><br>
+            <select class="form-control" formControlName="mode">
+              <option value="cash">cash</option>
+              <option value="online">online</option>
+            </select>
+          </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Item</label><br>
+            <ng-multiselect-dropdown
+            [placeholder]="'select Items'"
+            [settings]="dropdownSettings"
+            [data]="dropdownList"
+            formControlName="description"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+          >
+          </ng-multiselect-dropdown>
+          </div>
+        
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Earned/Invest</label><br>
+            <select class="form-control" formControlName="status" >
+              <option value="1">Earn</option>
+              <option value="0">invest</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Deposited To / from</label><br>
+            <select class="form-control" formControlName="source">
+              <option value="nainji">Nainji</option>
+              <option value="rohit">Rohit</option>
+            </select>
+          </div>
+        <button type="submit" class="btn btn-primary" (click)="submit()">Save</button>
+      </form>
+</div>
+
+        </div>
+    </div>
+</div>

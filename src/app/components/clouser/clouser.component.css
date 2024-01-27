@@ -1,28 +1,40 @@
 .firstsection{
+    position: relative;
+    font-family: cursive;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin:  0px;
-    background-color: rgb(0, 0, 33);
+    background-color: rgb(18,18,62);
     color: white;
 } 
 
-.firstsection > div{
-    width: 44%;
+.demo-button{
+background-color: #ffd700;
+color: rgb(18,18,62);
+font-size: 40px;
+border-radius: 15px;
+padding:15px;
+position: absolute;
+bottom: 30px;
+left:10rem;
+
 }
+
 .welcome{
-    margin-left: 29px;
-    font-size: 25px;
+    
+    font-size: 40px;
     
 }
 .Golden{
-    color: goldenrod;
+    color: #ffd700;
 }
+
 .leftsection{
-    /* background-color: red;
-    width: 50%; */
+    
     font-size: 4rem;
-    /* margin: 50px 0px; */
+    
 }
 
 .rightsection{
@@ -34,13 +46,13 @@ width: 80%;
     margin: 50px 0px;
 }
 .perpal{
-    color: goldenrod;
+    color: #ffd700;
 }
 .text-gray{
     color: gray;
 }
 #element{
-    color: goldenrod;
+    color: #ffd700;
 }
 main hr{
     border: 0;
@@ -50,4 +62,10 @@ main hr{
     margin: 40px 70px;
     width: 90%;
 
+}
+
+@media(max-width:800){
+    .firstsection{
+        display:none !important
+    }
 }

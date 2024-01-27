@@ -13,7 +13,7 @@
                     <div class='fs-5'>
                         <!-- We can help you create positive and permanent changes in your life. Let’s Create Something new
                         and awesome Togeather. -->
-                        "Do you believe in love at first code review? Because We are ready to make our collaboration error-free and full of efficiency."
+                         We believe in Quality over Quantity,We Are Ready To Grow With you
                     </div>
 
                 </div>
@@ -21,35 +21,18 @@
         </div>
           <!-- ------------------cards start--------------------------- -->
 
-          <div class="card-group">
-            <div class="card" *ngFor="let data of cardsGroup ">
+          <div class="card-group row">
+            <div class="col-md-3 col-sm-6 col-xs-12 card" *ngFor="let data of cardsGroup ">
                 <img  class="top-card-img" src={{data.imgUrl}}  alt="notebook">
               <div class="card-body">
                 <h4 class="card-title">{{data.cardTitle}}</h4>
                 <p class="card-text"> {{data.cardText}}</p>
-                <div class="read-more"><i class="bi bi-arrow-right"></i><span>{{data.readMore}}</span></div>
+                <div class="read-more"><span>{{data.readMore}}</span></div>
               </div>
             </div>
-            <!-- <div class="card">
-              <img  class="top-card-img" src="../assets/All_imgaes/cards img/people.png "  alt="">
-              <div class="card-body">
-                <h4 class="card-title">Training Mentor</h4>
-                <p class="card-text">Open a beautiful store & increase your conversion rates. Deploy a conversion rate optimization. Best Services.</p>
-                <div class="read-more"><i class="bi bi-arrow-right"></i><span>Read More</span></div>
-              </div>
-            </div>
-            <div class="card">
-              <img  class="top-card-img" src="../assets/All_imgaes/cards img/thinking icon.png "  alt="">
-              <div class="card-body">
-                <h4 class="card-title">Thinking Creative</h4>
-                <p class="card-text">'Thinking Creatively' is a crucial skill that involves the ability to think outside the box and come up with unique, 
-                  efficient solutions to coding problems.</p>
-                
-                <div class="read-more"><i class="bi bi-arrow-right"></i><span>Read More</span></div>
-              </div>
-            </div> -->
+            
           </div>
 
-          <button class="btn">{{btnText}} <i class="bi bi-arrow-right"></i></button>
+          <!-- <button class="btn">{{btnText}} <i class="bi bi-arrow-right"></i></button> -->
     </div>  
 </div>

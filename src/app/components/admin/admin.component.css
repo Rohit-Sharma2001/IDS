@@ -1,0 +1,18 @@
+.container-fluid{
+height: 100vh;
+}
+
+.admin-menu{
+    list-style: none;
+    font-size: 2rem;
+    font-family: cursive;
+    padding: 0px;
+    
+}
+
+.admin-menu li{
+    width: 100%;
+    border-bottom:2px solid black;
+    cursor: pointer;
+
+}
