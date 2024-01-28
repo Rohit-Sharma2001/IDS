@@ -12,7 +12,7 @@ sidebar:boolean=false
 userData:any
 constructor(public router:Router,private auth:AuthService){
   let temp=localStorage.getItem('user')
-  this.userData=temp?JSON.parse(temp):{}
+  this.userData=temp?JSON.parse(temp):null
   console.log(this.userData)
   
 }
