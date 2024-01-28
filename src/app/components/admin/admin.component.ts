@@ -57,7 +57,7 @@ console.log(items);
 
 submit(){
   if(this.accountForm.valid){
-    this.api.post('http://localhost:7000/transaction/saveTransaction',this.accountForm.value).subscribe((data:any)=>{
+    this.api.post('transaction/saveTransaction',this.accountForm.value).subscribe((data:any)=>{
       if(data.code==1){
 this.accountForm.reset()
       }else{

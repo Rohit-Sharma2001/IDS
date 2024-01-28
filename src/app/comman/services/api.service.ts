@@ -5,10 +5,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApiService {
+   defaultUrl:any='https://ids-ten.vercel.app/'
 
   constructor(private http:HttpClient) { }
 
   post(url:string,body:any){
-   return  this.http.post(url,body)
+   return  this.http.post(this.defaultUrl+url,body)
   }
 }

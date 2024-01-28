@@ -40,7 +40,7 @@ else{
 
 submit(){
 if(this.loginForm.valid){
-  let url=this.signupPage?'http://localhost:7000/user/register':'http://localhost:7000/user/login'
+  let url=this.signupPage?'user/register':'user/login'
 this.api.post(url,this.loginForm.value).subscribe((data:any)=>{
   console.log(data)
 if(data.code){
