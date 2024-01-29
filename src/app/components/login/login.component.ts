@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/comman/services/api.service';
 import { AuthService } from 'src/app/comman/services/auth.service';
+import { ToastrService } from 'ngx-toastr';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { AuthService } from 'src/app/comman/services/auth.service';
 })
 export class LoginComponent {
  signupPage:boolean=false;
- constructor(private fb:FormBuilder,private api:ApiService,private router:Router, private auth:AuthService){}
+ constructor(private fb:FormBuilder,private api:ApiService,private router:Router, private auth:AuthService,private toast:ToastrService){}
  loginForm:FormGroup;
 ngOnInit(){
 this.loginForm=this.fb.group({
@@ -38,21 +39,29 @@ else{
 
 }
 
+
+
 submit(){
 if(this.loginForm.valid){
   let url=this.signupPage?'user/register':'user/login'
 this.api.post(url,this.loginForm.value).subscribe((data:any)=>{
-  console.log(data)
+  
 if(data.code){
   if(!this.signupPage){
+    this.toast.success(`Welcome Back ${data.data.name}`,"Login")
   this.auth.setUserData(data.data)
   this.router.navigate([''])
 }else{
 this.signupPage=false
+this.toast.success(`Welcome ${this.loginForm.value.name}`,"Registration Successful")
+
 }
+}else{
+  this.toast.error(data.message,'Error')
 }
 })
 }else{
+  this.toast.error("Please Check the Details")
 
 }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/comman/services/api.service';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-admin',
@@ -22,7 +23,7 @@ export class AdminComponent {
     itemsShowLimit: 3,
     allowSearchFilter: true
   };
-constructor(private fb:FormBuilder,private api:ApiService){
+constructor(private fb:FormBuilder,private api:ApiService,private toast:ToastrService){
   this.accountForm=this.fb.group({
     category:["",Validators.required],
     mode:["",Validators.required],
@@ -59,6 +60,8 @@ submit(){
   if(this.accountForm.valid){
     this.api.post('transaction/saveTransaction',this.accountForm.value).subscribe((data:any)=>{
       if(data.code==1){
+    this.toast.success(`${this.accountForm.value.amount} added successfully`,"Added")
+
 this.accountForm.reset()
       }else{
         console.log("error")

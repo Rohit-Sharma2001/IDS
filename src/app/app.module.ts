@@ -24,6 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './components/admin/admin.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -55,7 +58,9 @@ import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgMultiSelectDropDownModule.forRoot()
+    NgMultiSelectDropDownModule.forRoot(),
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(),
   ],
   providers: [ApiCallingService],
   bootstrap: [AppComponent]

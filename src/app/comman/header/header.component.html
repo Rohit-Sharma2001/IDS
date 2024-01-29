@@ -11,7 +11,7 @@
   <li class="hideOnMobile"><a (click)="navigate('')">Home</a></li>
   <li class="hideOnMobile"><a (click)="navigate('courses')">Courses</a></li>
   <li *ngIf="userData?.role=='admin'" class="hideOnMobile"><a (click)="navigate('admin')">Admin</a></li>
-  <li class="hideOnMobile"><a (click)="navigate('login')">{{!userData?'SignUp/SignIn':'Logout'}}</a></li>
+  <li class="hideOnMobile"><a (click)="sign()">{{!userData?'SignUp/SignIn':'Logout'}}</a></li>
   <li><a class="menu-button" (click)="toggleSidebar(true)"><i class="fa-solid fa-bars"></i></a></li>
 </ul>
 </nav>
