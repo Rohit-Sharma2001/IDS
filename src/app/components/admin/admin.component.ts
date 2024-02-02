@@ -30,14 +30,29 @@ constructor(private fb:FormBuilder,private api:ApiService,private toast:ToastrSe
     status:["",Validators.required],
     source:["",Validators.required],
     description:["",Validators.required],
-    amount:[0,Validators.required]
+    amount:['',Validators.required]
   })
   this.dropdownList = [
     { item_id: "coffee", item_text: 'Coffee' },
     { item_id: "masalachai", item_text: 'Masala chai' },
     { item_id: "connect", item_text: 'Connect' },
     { item_id: 'advance', item_text: 'Advance' },
-    { item_id: 'maggie', item_text: 'Maggie' }
+    { item_id: 'maggie', item_text: 'Maggie' },
+    { item_id: 'groceries', item_text: 'Groceries' },
+    { item_id: 'sandwich', item_text: 'Sandwich' },
+    { item_id: 'burger', item_text: 'Burger' },
+    { item_id: 'pasta', item_text: 'Pasta' },
+    { item_id: 'coaching', item_text: 'coaching' },
+    { item_id: 'project', item_text: 'project' },
+
+
+    { item_id: 'cold coffee', item_text: 'Cold Coffee' },
+    { item_id: 'vada pav', item_text: 'vada pav' },
+
+
+    
+
+    
   ];
 }
 ngOnInIt(){

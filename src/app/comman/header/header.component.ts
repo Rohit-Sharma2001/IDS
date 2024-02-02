@@ -23,11 +23,11 @@ this.auth.userData.subscribe((data)=>{
 
 sign(){
   if(this.userData){
-    
 this.auth.setUserData(null)
+this.navigate('')
+  }else{
+this.navigate('/login')
   }
-  
-  this.navigate('')
 
 }
 toggleSidebar(bool:boolean){

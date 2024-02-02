@@ -27,6 +27,7 @@ import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { ToastrModule } from 'ngx-toastr';
     UserProfilesComponent,
     CertificateComponent,
     AdminComponent,
-    PrivacypolicyComponent
+    PrivacypolicyComponent,
+    DashboardComponent
     
   ],
   imports: [

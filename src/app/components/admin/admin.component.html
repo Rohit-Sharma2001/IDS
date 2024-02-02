@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row bg-white">
-        <div class="col-md-2 col-sm-12">
+        <div class="col-md-2 col-sm-12 border">
             <ul class="admin-menu">
                 <li>
                     Accounts
@@ -16,6 +16,7 @@
         </div>
         <div class="col-md-10 col-sm-12">
 <div class="container my-5">
+<div class="d-flex justify-content-end"><button class="btn btn-primary">View Account Details</button></div>
     <form class="w-50" [formGroup]="accountForm">
         <div class="mb-3">
           <label for="amount" class="form-label">Amount</label>
@@ -24,13 +25,15 @@
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Category</label><br>
           <select class="form-control" formControlName="category">
-            <option value="cafe">Cafe</option>
-            <option value="coaching">Coaching</option>
+            <option value="">Select</option>
+            <option value="cafe">Cafe Infinite</option>
+            <option value="coaching">IDS</option>
           </select>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Payment Mode</label><br>
             <select class="form-control" formControlName="mode">
+              <option value="">Select</option>
               <option value="cash">cash</option>
               <option value="online">online</option>
             </select>
@@ -51,6 +54,7 @@
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Earned/Invest</label><br>
             <select class="form-control" formControlName="status" >
+              <option value="">Select</option>
               <option value="1">Earn</option>
               <option value="0">invest</option>
             </select>
@@ -58,6 +62,7 @@
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Deposited To / from</label><br>
             <select class="form-control" formControlName="source">
+              <option value="">Select</option>
               <option value="nainji">Nainji</option>
               <option value="rohit">Rohit</option>
             </select>
