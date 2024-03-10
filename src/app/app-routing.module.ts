@@ -10,6 +10,8 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { PrivacypolicyComponent } from './components/privacypolicy/privacypolicy.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
 import { AuthGuard } from 'src/auth.guard';
 
 const routes: Routes = [
@@ -25,10 +27,12 @@ const routes: Routes = [
     { path: "login", component:LoginComponent},
     { path: "register", component:RegisterComponent},
     {path:"courses",component:CoursesCardComponent},
-    {path:"about",component:AboutUsComponent},
+    {path:"about",component:AboutComponent},
     {path:"admin",canActivate:[AuthGuard],component:AdminComponent},
     {path:"certificate", component:CertificateComponent},
     {path:"policy",component:PrivacypolicyComponent},
+    {path:"contact", component:ContactComponent},
+    {path:"about", component:AboutComponent},
 
   ], { useHash: true })],
   exports: [RouterModule]

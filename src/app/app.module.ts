@@ -28,6 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     CertificateComponent,
     AdminComponent,
     PrivacypolicyComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContactComponent,
+    AboutComponent
     
   ],
   imports: [
